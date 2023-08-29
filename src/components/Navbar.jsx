@@ -16,7 +16,7 @@ import {
   useColorModeValue,
   useToast,
 } from "@chakra-ui/react";
-import { HamburgerIcon, CloseIcon} from "@chakra-ui/icons";
+import { HamburgerIcon, CloseIcon, AddIcon} from "@chakra-ui/icons";
 import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
@@ -116,7 +116,7 @@ export default function WithAction() {
           </HStack>
           <Flex alignItems={"center"}>
             <Link to="/addproduct">
-              {/* { <Button
+              { <Button
                 variant={"solid"}
                 // colorScheme={"teal"}
                 size={"sm"}
@@ -125,9 +125,9 @@ export default function WithAction() {
                 leftIcon={<AddIcon />}
               >
                 Sell
-              </Button>} */}
+              </Button>}
               
-              <a class="rainbow-btn" href=""><span> + Sell</span></a>
+              {/* <a class="rainbow-btn" href=""><span> + Sell</span></a> */}
             </Link>
             <Menu>
               <MenuButton
